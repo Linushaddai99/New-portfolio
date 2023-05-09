@@ -7,8 +7,6 @@
 }
 
 .social-media {
-    /* text-align: center; */
-    /* padding: 20px 0; */
     margin-bottom: 20px;
 }
 
@@ -16,8 +14,6 @@
 .social-media h3 {
     display: inline-block;
     margin: 0 5px;
-    /* text-decoration: underline; */
-    /* margin-bottom: 100px; */
 }
 
 .social-media a {
@@ -64,5 +60,4 @@ form  button{
 form button:hover {
     background-color: var(--font-color);
     color: var(--background-color);
-    /* padding: 9px 31px; */
 }

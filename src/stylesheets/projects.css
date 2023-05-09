@@ -18,13 +18,6 @@
     font-size: 18px;
 }
 
-/* .projects-div {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    gap: 30px;
-    margin-top: 20px;
-} */
-
 .project {
     display: flex;
     flex-direction: column;

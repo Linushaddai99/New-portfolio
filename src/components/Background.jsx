@@ -1,5 +1,5 @@
 import React from 'react';
-import Photo from '../assets/my-photo.png'
+import Photo from '../assets/my-photo.jpg'
 
 const Background = () => {
   return (
@@ -15,7 +15,7 @@ const Background = () => {
                 <p>I am an easy going person who enjoys spending time with good people. I love watching movies, playing videogames, and going out to eat when I am not working. I am extremely motivated to learn and grow as a developer.</p>
             </div>
             <div className='img-div'>
-                {/* <img src={Photo} alt="" /> */}
+                <img src={Photo} alt="" />
             </div>
         </div>
     </div>

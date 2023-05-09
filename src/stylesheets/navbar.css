@@ -16,7 +16,6 @@
 .navigation {
     display: flex;
     width: 70%;
-    /* border: 1px solid white; */
     justify-content: flex-end;
     align-items: center;
 }
@@ -55,23 +54,8 @@
 
 .mobile-nav {
   position: relative;
-  /* width: 100%; */
 }
 
-/* .mobile-navigation {
-  background-color: var(--background-color);
-  position: absolute;
-  width: 350px;
-  left: -250px;
-  z-index: 1000;
-  padding: 10px;
-  border: 1px solid var(--font-color);
-  transition: transform 250s ease-in-out;
-} */
-
-/* .translate {
-  transform: translateX(-550px);
-} */
 
 .mobile-navigation {
   background-color: var(--background-color);
