@@ -1,42 +1,66 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Poppins:wght@300;600;700&display=swap');
+
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* :root {
+  --color-one: #10002b;
+  --color-two: #240046;
+  --color-third: #3c096c;
+  --color-four: #5a189a;
+  --color-five: #7b2cbf;
+  --color-six: #9d4edd;
+  --color-seven: #c77dff;
+  --color-eight: #e0aaff;
+} */
+
+:root {
+  --background-color: black;
+  --font-color: #ced4da
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.light-mode {
+  --background-color: white;
+  --font-color: #475569;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--background-color);
+  color: var(--font-color);
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.body {
+  padding-top: 400px;
+  margin-bottom: 20px;
+}
+
+.container {
+  padding: 0 5%;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 10%;
   }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}

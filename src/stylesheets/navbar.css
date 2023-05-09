@@ -1,0 +1,147 @@
+.nav-section {
+    position: fixed;
+    width: 100%;
+    background-color: var(--background-color);
+    z-index: 10000;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 5%;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+.navigation {
+    display: flex;
+    width: 70%;
+    /* border: 1px solid white; */
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav .desktop-nav {
+    display: none;
+}
+
+.nav h2 {
+    letter-spacing: 1px;
+}
+
+.nav li {
+  padding: 10px;
+
+}
+
+.nav li:hover {
+  box-shadow: var(--font-color) 0px 2px 8px 0px;
+}
+
+
+.time {
+   display: flex;
+   align-items: center;
+}
+
+.time span {
+    margin: 0 20px;
+}
+
+.time p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.mobile-nav {
+  position: relative;
+  /* width: 100%; */
+}
+
+/* .mobile-navigation {
+  background-color: var(--background-color);
+  position: absolute;
+  width: 350px;
+  left: -250px;
+  z-index: 1000;
+  padding: 10px;
+  border: 1px solid var(--font-color);
+  transition: transform 250s ease-in-out;
+} */
+
+/* .translate {
+  transform: translateX(-550px);
+} */
+
+.mobile-navigation {
+  background-color: var(--background-color);
+  position: absolute;
+  width: 350px;
+  left: -250px;
+  top: 40px;
+  padding: 10px;
+  border: 1px solid var(--font-color);
+}
+
+.mobile-navigation.active {
+  right: 400px;
+}
+
+
+
+.mobile-navigation li {
+  display: block;
+}
+
+.mobile-nav button {
+    background-color: transparent;
+    color: inherit;
+    border: none;
+}
+
+.line {
+    padding: 5px;
+    border-top: 1px solid #ced4da;
+    border-bottom: 1px solid #ced4da;
+}
+  
+  .theme {
+    cursor: pointer;
+  }
+
+  .blur {
+    filter: blur(2px);
+  } 
+
+@media (min-width: 768px) {
+
+    .nav {
+        padding: 20px 10%;
+    }
+
+    .navigation {
+        display: flex;
+        width: 70%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav .desktop-nav {
+        display: block;
+    }
+
+    .nav .desktop-nav li {
+        display: inline-block;
+        margin-right: 50px;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    .time p {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+}
