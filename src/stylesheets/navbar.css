@@ -26,6 +26,7 @@
 
 .nav h2 {
     letter-spacing: 1px;
+    font-size: 18px;
 }
 
 .nav li {
@@ -102,6 +103,11 @@
     .nav {
         padding: 20px 10%;
     }
+
+    .nav h2 {
+      letter-spacing: 1px;
+      font-size: 25px;
+  }
 
     .navigation {
         display: flex;

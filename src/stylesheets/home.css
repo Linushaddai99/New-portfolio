@@ -5,8 +5,8 @@
 }
 
 .display-photo h1 {
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 27px;
+    font-weight: 600;
     letter-spacing: 1px;
     margin-bottom: 20px;
 }
@@ -62,11 +62,7 @@
 }
 
 .img-div {
-    margin-left: 0;
-    /* border: 1px solid var(--font-color); */
-    text-align: center;
-    align-self: center;
-    height: auto;
+   display: none;
 }
 
 .img-div img {
