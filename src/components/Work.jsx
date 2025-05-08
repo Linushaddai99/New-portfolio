@@ -6,12 +6,14 @@ import budgetApp from '../assets/budget-app.png'
 import bookstore from '../assets/bookstore.png'
 import weatherApp from '../assets/weather-app.png'
 import quiz from '../assets/quiz.png'
+import rps from '../assets/rps.png'
 
 const Work = () => {
   return (
     <div className='project-section' id="work">
         <h1>Projects</h1>
         <div className="projects-div">
+        <Project title={'06) Rock Paper Scissors'} img={rps} technology={['React', 'Redux', 'JavaScript', 'Tailwind', 'CSS', 'HTML']} repo={"https://github.com/Linushaddai99/rock_paper_scissors"} demo={'https://rrppsss.netlify.app/'} about={'A simple Rock-Paper-Scissors game built with react, typescript and tailwind. Features player vs. computer mode, random AI selection, and a clean UI. Play, win, or lose—may the best choice win!'}/>
         <Project title={'01) COUNTRIES OF THE WORLD🌍'} img={countries} technology={['React', 'Redux', 'JavaScript', 'CSS', 'HTML']} repo={'https://github.com/Linushaddai99/Countries-Of-The-World'} demo={'https://linus-countries.netlify.app/'} about={'This is a web application where users are able to see all the countries in the world on the homepage, filter countries by region, click on a country to see more information, search for a country and toggle dark and light modes.'}/>
         <Project title={'02) NET MOVIES'} img={netMovies} technology={['JavaScript', 'CSS', 'HTML']} repo={'https://github.com/belalgamal46/Capstone-Project-2'} demo={'https://belalgamal46.github.io/Capstone-Project-2/dist/'} about={'Net Movies is a website that displays trending, comedy, action and animation movies. We get these movies and their details from an external Api. We also used an involvement Api to save the likes and comments of each movie.'}/>
         <Project title={'06) QUIZ APP'} img={quiz} technology={['React', 'Redux', 'JavaScript', 'CSS',]} repo={'https://github.com/Linushaddai99/quiz-app'} demo={'https://quiz-app-7j3l.onrender.com/'} about={'In this web application, users are able to take a quiz of their choice by selecting the number, category, difficulty level and type of questions. Users can see their score at the end of the quiz.'}/>
