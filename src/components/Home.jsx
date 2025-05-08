@@ -30,9 +30,11 @@ const Home = () => {
           <p>I love developing user-friendly websites and adding creative elements to make them more memorable. </p>
           <h3>Front-End Developemnt</h3>
           <button>React</button>
+          <button>Redux</button>
           <button>Vue</button>
           <button>JavaScript</button>
           <button>TypeScript</button>
+          <button>TanstackQuery</button>
           <button>HTML</button>
           <button>CSS</button>
           <button>Boostrap</button>
