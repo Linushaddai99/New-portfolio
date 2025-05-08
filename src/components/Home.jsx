@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div className="container body">
         <div className="display-photo">
-            <h1>FRONDEND DEVELOPER</h1>
+            <h1>FRONTEND DEVELOPER</h1>
             <div className='typing-photo'>
                 <img src={displayPhoto} alt="" />
             </div>
