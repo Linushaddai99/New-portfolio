@@ -1,6 +1,8 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 
 const Navbar = () => {
+    const navRef = useRef(null);
+
     const [hour, setHour] = useState('');
     const [min, setMin] = useState('');
     const [sec, setSec] = useState('');
@@ -38,6 +40,16 @@ const Navbar = () => {
         document.body.classList.toggle('light-mode')
     }
 
+      const handleClickOutside = (event) => {
+        if (navRef.current && !navRef.current.contains(event.target)) {
+            setMobileNav(false);
+        }
+    };
+
+    useEffect(() => {
+        document.addEventListener('mousedown', handleClickOutside)
+    }, [])
+
   return (
     <div className="nav-section">
         <div className="nav">
@@ -58,7 +70,7 @@ const Navbar = () => {
                 <span className="material-symbols-outlined theme" onClick={handleTheme}>{theme ? 'dark_mode' : 'light_mode'}</span>
             </div>
 
-            <div className="mobile-nav">
+            <div ref={navRef} className="mobile-nav">
                 <button type="button" className="material-symbols-outlined mobile-menu" onClick={handleMobileNav}>menu</button>
                 {  mobileNav ? 
                     <ul className='mobile-navigation'>
