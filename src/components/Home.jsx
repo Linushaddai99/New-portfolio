@@ -15,7 +15,7 @@ const Home = () => {
                 <img src={displayPhoto} alt="" />
             </div>
             <div>
-              <a className="resume-btn" href="Resume2.pdf" download="Shaddai's Resume"><span class="material-symbols-outlined">arrow_downward</span>Resume</a>
+              <a className="resume-btn" href="Resume.docx" download="Shaddai's Resume"><span class="material-symbols-outlined">arrow_downward</span>Resume</a>
               <a className="resume-btn" href = "mailto: awajisomegak@gmail.com"><span class="material-symbols-outlined">arrow_upward</span>Email Me</a>
             </div>
         </div>
